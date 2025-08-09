@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analytics Dashboard</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Chart.js for data visualization -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Custom CSS for dark theme and font -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* bg-gray-900 */
+            color: #f9fafb; /* text-gray-50 */
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        /* Custom styles for Chart.js tooltips */
+        .chartjs-tooltip {
+            background: rgba(26, 32, 44, 0.9);
+            border-radius: 0.5rem;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: 1px solid #4A5568;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="p-4 sm:p-6 lg:p-8">
+        <!-- Header -->
+        <header class="mb-8">
+            <h1 class="text-3xl font-bold tracking-tight text-gray-100">Welcome Back!</h1>
+            <p class="text-gray-400 mt-1">Here's a snapshot of your business performance.</p>
+        </header>
+
+        <!-- Main Grid for Dashboard Components -->
+        <main id="dashboard-grid" class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+            <!-- All dashboard cards will be dynamically inserted here by script.js -->
+            <div id="loading-indicator" class="lg:col-span-4 text-center p-8">
+                <p class="text-lg text-gray-400">Loading Dashboard Data...</p>
+            </div>
+        </main>
+    </div>
+
+    <!-- Link to the main JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
